@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --btn-margin: 10px;
+  --keypad-margin: 10px;
+}
+
+.App {
+  height: 100vh;
+  width: 100%;
+  background-color: cadetblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Calculator {
+  height: 75vh;
+  width: 500px;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.7);
+  background-color: #1b1c29;
+}
+
+.Screen {
+  height: 30%;
+  color: white;
+  padding: 0 2rem;
+}
+
+.ResultScreen {
+  height: 75%;
+  font-size: 80px;
+  font-weight: 400;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.ComputationScreen {
+  height: 25%;
+  font-size: 25px;
+  font-weight: 300;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.Keypad {
+  height: 70%;
+  width: 100%;
+  padding: 10px;
+}
+
+.Row {
+  height: -webkit-calc(20% - var(--btn-margin));
+  width: -webkit-calc(100% - var(--keypad-margin));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+}
+
+.Button {
+  width: -webkit-calc(25% - var(--btn-margin));
+  height: -webkit-calc(100% - var(--btn-margin));
+  background-color: #1f2536;
+  border-radius: 5px;
+  margin: 0 var(--btn-margin);
+  border: none;
+  color: white;
+  font-size: 30px;
+  outline: none;
+}
+
+.Button:hover {
+  filter: brightness(125%);
+}
+
+.Button:active {
+  transform: scale(0.95);
+}
+
+.operator {
+  background-color: #51c9dc;
+}
+
+.large {
+  width: 50%;
+}
